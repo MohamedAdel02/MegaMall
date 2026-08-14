@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="MegaMall" customModuleProvider="target">
+            <connections>
+                <outlet property="addedButton" destination="P0A-Ke-mgG" id="XZJ-lQ-o2y"/>
+                <outlet property="tableView" destination="JkP-J8-rJE" id="HcR-Ig-UEp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s6y-t3-dXE">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JkP-J8-rJE">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="762"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <color key="sectionIndexBackgroundColor" systemColor="systemGray6Color"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </tableView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w3y-jZ-rRO">
+                            <rect key="frame" x="0.0" y="762" width="393" height="90"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-c3-yd4">
+                                    <rect key="frame" x="31.666666666666657" y="0.0" width="330" height="90"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-Ke-mgG">
+                                            <rect key="frame" x="0.0" y="20" width="150" height="50"/>
+                                            <color key="backgroundColor" name="Red Velvet"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="T7N-du-778"/>
+                                                <constraint firstAttribute="width" constant="150" id="f3N-61-cxu"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="-8" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="8" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Added">
+                                                <imageReference key="image" image="heart.fill" catalog="system" symbolScale="default"/>
+                                                <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vna-PH-Ot4">
+                                            <rect key="frame" x="180" y="20" width="150" height="50"/>
+                                            <color key="backgroundColor" name="Blue Ocean"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="Abb-k4-Jll"/>
+                                                <constraint firstAttribute="height" constant="50" id="Vo2-Yt-t3R"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Add to Cart">
+                                                <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="tuz-GV-kDN"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="w3y-jZ-rRO" firstAttribute="top" secondItem="JkP-J8-rJE" secondAttribute="bottom" id="MVE-zZ-gQ3"/>
+                        <constraint firstItem="JkP-J8-rJE" firstAttribute="top" secondItem="s6y-t3-dXE" secondAttribute="top" id="wEI-z9-WvK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="s6y-t3-dXE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2pf-Te-OZf"/>
+                <constraint firstItem="s6y-t3-dXE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FOe-yG-hsD"/>
+                <constraint firstItem="s6y-t3-dXE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uct-Ji-4vB"/>
+                <constraint firstAttribute="bottom" secondItem="s6y-t3-dXE" secondAttribute="bottom" id="d0t-Tt-7Ug"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-76" y="118"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <namedColor name="Blue Ocean">
+            <color red="0.21176470588235294" green="0.41176470588235292" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red Velvet">
+            <color red="0.78823529411764703" green="0.20784313725490197" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
