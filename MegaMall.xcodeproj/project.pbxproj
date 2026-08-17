@@ -11,6 +11,7 @@
 		D926746E302FB4A7007D8902 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = D926746D302FB4A7007D8902 /* SkeletonView */; };
 		D97F595D3024B29B00D3C53E /* CustomTextField in Frameworks */ = {isa = PBXBuildFile; productRef = D97F595C3024B29B00D3C53E /* CustomTextField */; };
 		D97F595F3024B91F00D3C53E /* CustomButton in Frameworks */ = {isa = PBXBuildFile; productRef = D97F595E3024B91F00D3C53E /* CustomButton */; };
+		D9A461B0303226F400FAEAF6 /* ImagePager in Frameworks */ = {isa = PBXBuildFile; productRef = D9A461AF303226F400FAEAF6 /* ImagePager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				CustomTextField,
+				ImagePager,
 				Info.plist,
 			);
 			target = D97F585330249BF300D3C53E /* MegaMall */;
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A461B0303226F400FAEAF6 /* ImagePager in Frameworks */,
 				D926746E302FB4A7007D8902 /* SkeletonView in Frameworks */,
 				D97F595D3024B29B00D3C53E /* CustomTextField in Frameworks */,
 				D97F595F3024B91F00D3C53E /* CustomButton in Frameworks */,
@@ -102,6 +105,7 @@
 				D97F595E3024B91F00D3C53E /* CustomButton */,
 				D926746A302FAB3D007D8902 /* NDS_Networking */,
 				D926746D302FB4A7007D8902 /* SkeletonView */,
+				D9A461AF303226F400FAEAF6 /* ImagePager */,
 			);
 			productName = MegaMall;
 			productReference = D97F585430249BF300D3C53E /* MegaMall.app */;
@@ -408,6 +412,10 @@
 		D97F595E3024B91F00D3C53E /* CustomButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CustomButton;
+		};
+		D9A461AF303226F400FAEAF6 /* ImagePager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImagePager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

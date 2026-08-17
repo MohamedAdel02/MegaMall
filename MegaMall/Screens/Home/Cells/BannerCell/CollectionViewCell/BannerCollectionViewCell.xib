@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="MegaMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="TOa-d5-qt1">
+                        <rect key="frame" x="0.0" y="0.0" width="347" height="260"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="260" id="tNM-61-THz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TOa-d5-qt1" secondAttribute="bottom" id="8Ij-5W-b96"/>
+                <constraint firstItem="TOa-d5-qt1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SuQ-ad-Pno"/>
+                <constraint firstAttribute="trailing" secondItem="TOa-d5-qt1" secondAttribute="trailing" id="mE3-Ww-cTO"/>
+                <constraint firstItem="TOa-d5-qt1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="y0f-Ie-8fv"/>
+            </constraints>
+            <size key="customSize" width="347" height="311"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bannerImageView" destination="TOa-d5-qt1" id="Wee-62-piO"/>
+            </connections>
+            <point key="canvasLocation" x="93.89312977099236" y="170.77464788732397"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner" width="1430" height="678"/>
+    </resources>
+</document>

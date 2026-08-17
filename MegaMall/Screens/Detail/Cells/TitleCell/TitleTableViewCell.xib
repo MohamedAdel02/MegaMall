@@ -24,15 +24,16 @@
                             <stackView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="SyR-yZ-zPh">
                                 <rect key="frame" x="0.0" y="0.0" width="660" height="433"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COj-fZ-fAb">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jv8-aB-F8g" userLabel="Product Image View">
                                         <rect key="frame" x="0.0" y="0.0" width="660" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="6LJ-tp-soD"/>
+                                            <constraint firstAttribute="height" constant="300" id="rzU-o0-dgi"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                         </userDefinedRuntimeAttributes>
-                                    </imageView>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YEQ-BG-BkV">
                                         <rect key="frame" x="0.0" y="338" width="660" height="95"/>
                                         <subviews>
@@ -109,10 +110,6 @@
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="COj-fZ-fAb" firstAttribute="leading" secondItem="SyR-yZ-zPh" secondAttribute="leading" id="tW7-AM-Xwv"/>
-                                    <constraint firstAttribute="trailing" secondItem="COj-fZ-fAb" secondAttribute="trailing" id="yX0-3t-WEo"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -148,7 +145,7 @@
                 <outlet property="availabilityLabel" destination="880-KI-s0D" id="I6J-QG-reJ"/>
                 <outlet property="numOfReviewsLabel" destination="BOU-X2-aSo" id="7lB-Jl-xcW"/>
                 <outlet property="priceLabel" destination="BBF-f4-Pws" id="3OZ-wa-Wc0"/>
-                <outlet property="productImageView" destination="COj-fZ-fAb" id="57Y-nz-nfC"/>
+                <outlet property="productImageView" destination="Jv8-aB-F8g" id="x36-hu-SwE"/>
                 <outlet property="ratingLabel" destination="a2b-w6-QCl" id="uAk-OQ-JjG"/>
                 <outlet property="titleLabel" destination="dnW-4E-G9X" id="p4P-Kd-ymG"/>
             </connections>
@@ -166,6 +163,9 @@
         <namedColor name="Red Velvet">
             <color red="0.78823529411764703" green="0.20784313725490197" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

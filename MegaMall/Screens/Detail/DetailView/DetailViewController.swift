@@ -27,17 +27,17 @@ class DetailViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.separatorStyle = .none
-        
+                
         tableView.showsVerticalScrollIndicator = false
 
         tableView.register(UINib(nibName: "TitleTableViewCell", bundle: nil), forCellReuseIdentifier: TitleTableViewCell.reuseID)
         tableView.register(UINib(nibName: "SellerTableViewCell", bundle: nil), forCellReuseIdentifier: SellerTableViewCell.reuseID)
         tableView.register(UINib(nibName: "DescriptionTableViewCell", bundle: nil), forCellReuseIdentifier: DescriptionTableViewCell.reuseID)
         tableView.register(UINib(nibName: "ReviewsTableViewCell", bundle: nil), forCellReuseIdentifier: ReviewsTableViewCell.reuseID)
-        tableView.register(UINib(nibName: "FeaturedProductTableViewCell", bundle: nil), forCellReuseIdentifier: FeaturedProductTableViewCell.reuseID)
+        tableView.register(UINib(nibName: "ReusableTableViewCell", bundle: nil), forCellReuseIdentifier: ReusableTableViewCell.reuseID)
         
-        view.showAnimatedGradientSkeleton()
-        
+        view.showAnimatedGradientSkeleton(transition: .none)
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
             self?.view.hideSkeleton()
         }
@@ -94,9 +94,9 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(
-                withIdentifier: FeaturedProductTableViewCell.reuseID,
+                withIdentifier: ReusableTableViewCell.reuseID,
                 for: indexPath
-            ) as? FeaturedProductTableViewCell else {
+            ) as? ReusableTableViewCell else {
                 return UITableViewCell()
             }
             return cell
@@ -153,7 +153,7 @@ extension DetailViewController: SkeletonTableViewDataSource {
         case 1: return SellerTableViewCell.reuseID
         case 2: return DescriptionTableViewCell.reuseID
         case 3: return ReviewsTableViewCell.reuseID
-        case 4: return FeaturedProductTableViewCell.reuseID
+        case 4: return ReusableTableViewCell.reuseID
         default: return TitleTableViewCell.reuseID
         }
     }

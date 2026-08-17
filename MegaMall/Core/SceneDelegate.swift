@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          window = UIWindow(windowScene: scene)
         
         
-        let loginVC = CategoryListViewController(nibName: "CategoryListViewController", bundle: nil)
+        let loginVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
         let navController = UINavigationController(rootViewController: loginVC)
         window?.rootViewController = navController
         

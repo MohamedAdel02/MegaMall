@@ -25,7 +25,6 @@ class CategoryListViewController: UIViewController {
         searchTextField.applyStyle(type: .search, placeHolder: "Search Product Name")
         searchTextField.rightView?.isHidden = true
 
-        
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -40,8 +39,8 @@ class CategoryListViewController: UIViewController {
             forCellWithReuseIdentifier: DetailCollectionViewCell.reuseID
         )
         
-        view.showAnimatedGradientSkeleton()
-        
+        view.showAnimatedGradientSkeleton(transition: .none)
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
             self?.view.hideSkeleton()
             self?.searchTextField.rightView?.isHidden = false
